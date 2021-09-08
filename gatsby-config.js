@@ -11,7 +11,7 @@ module.exports = {
     {
         resolve: 'gatsby-source-prismic-graphql',
         options: {
-            repositoryName: 'REPO-NAME', // (REQUIRED, replace with your own)
+            repositoryName: 'jlnblnc', // (REQUIRED, replace with your own)
         }
     },
     `gatsby-image`,
