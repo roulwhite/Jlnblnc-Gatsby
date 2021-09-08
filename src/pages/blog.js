@@ -68,6 +68,7 @@ const Blog = ({ posts, meta }) => (
             ].concat(meta)}
         />
         <Layout>
+            <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=jlnblnc"></script>
             <BlogTitle>
                 Blog
             </BlogTitle>
@@ -131,4 +132,3 @@ export const query = graphql`
         }
     }
 `
-

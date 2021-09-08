@@ -96,7 +96,7 @@ const Post = ({ post, meta }) => {
     return (
         <>
             <Helmet
-                title={`${post.post_title[0].text} | Prist, Gatsby & Prismic Starter`}
+                title={`${post.post_title[0].text} | Jlnblnc, freelance SEO et webmarketing`}
                 titleTemplate={`%s | ${meta.title}`}
                 meta={[
                     {
@@ -105,7 +105,7 @@ const Post = ({ post, meta }) => {
                     },
                     {
                         property: `og:title`,
-                        content: `${post.post_title[0].text} | Prist, Gatsby & Prismic Starter`,
+                        content: `${post.post_title[0].text} | Jlnblnc, freelance SEO et webmarketing`,
                     },
                     {
                         property: `og:description`,
@@ -145,7 +145,7 @@ const Post = ({ post, meta }) => {
                         {post.post_author}
                     </PostAuthor>
                     <PostDate>
-                        <Moment format="MMMM D, YYYY">{post.post_date}</Moment>
+                        <Moment format="D MMMM YYYY">{post.post_date}</Moment>
                     </PostDate>
                 </PostMetas>
                     {post.post_hero_image && (

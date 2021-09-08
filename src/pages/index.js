@@ -155,8 +155,8 @@ const RenderBody = ({ home, projects, meta }) => (
                     uid={project.node._meta.uid}
                 />
             ))}
-            <WorkAction to={"/work"}>
-                See more work <span>&#8594;</span>
+            <WorkAction to={"/projets"}>
+                Voir plus de projets <span>&#8594;</span>
             </WorkAction>
         </Section>
         <Section>
@@ -179,6 +179,7 @@ export default ({ data }) => {
 
     return (
         <Layout>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=jlnblnc"></script>
             <RenderBody home={doc.node} projects={projects} meta={meta}/>
         </Layout>
     )

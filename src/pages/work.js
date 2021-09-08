@@ -13,8 +13,8 @@ const WorkTitle = styled("h1")`
 const Work = ({ projects, meta }) => (
     <>
         <Helmet
-            title={`Work | Prist, Gatsby & Prismic Starter`}
-            titleTemplate={`%s | Work | Prist, Gatsby & Prismic Starter`}
+            title={`Projets | Jlnblnc, freelance SEO et webmarketing`}
+            titleTemplate={`%s | Projets | Jlnblnc, freelance SEO et webmarketing`}
             meta={[
                 {
                     name: `description`,
@@ -22,7 +22,7 @@ const Work = ({ projects, meta }) => (
                 },
                 {
                     property: `og:title`,
-                    content: `Work | Prist, Gatsby & Prismic Starter`,
+                    content: `Projets | Jlnblnc, freelance SEO et webmarketing`,
                 },
                 {
                     property: `og:description`,
@@ -51,8 +51,9 @@ const Work = ({ projects, meta }) => (
             ].concat(meta)}
         />
         <Layout>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=jlnblnc"></script>
             <WorkTitle>
-                Work
+                Projets
             </WorkTitle>
             <>
                 {projects.map((project, i) => (
@@ -111,4 +112,3 @@ export const query = graphql`
         }
     }
 `
-
