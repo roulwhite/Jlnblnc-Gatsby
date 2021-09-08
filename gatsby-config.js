@@ -8,6 +8,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+        resolve: 'gatsby-source-prismic-graphql',
+        options: {
+            repositoryName: 'REPO-NAME', // (REQUIRED, replace with your own)
+        }
+    },
     `gatsby-image`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-sass`,
